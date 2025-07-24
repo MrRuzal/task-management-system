@@ -13,4 +13,5 @@ python-jose[cryptography]==3.3.0
 fastapi[security]==0.115.13
 python-multipart
 httpx[http2]==0.27.0
-pytest-asyncio==0.22.0
+pytest==7.4.4
+pytest-asyncio==0.21.1
