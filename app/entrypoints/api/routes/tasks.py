@@ -76,6 +76,8 @@ async def get_task(
             logger.error(f"Task not found: task_id={task_id}")
             raise HTTPException(status_code=404, detail="Task not found")
         return task
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Error in get_task: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Internal server error")
