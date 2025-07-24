@@ -1,0 +1,1 @@
+EntityId = int | None
